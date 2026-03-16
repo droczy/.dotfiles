@@ -1,0 +1,24 @@
+[general]
+live_config_reload = true
+
+[window]
+padding = { x = 10, y = 10 }
+dynamic_padding = true
+
+[font]
+size = 18.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[colors.primary]
+background = "#0A0A0A"
+foreground = "#E6E6E6"
+
+[colors.cursor]
+text = "#0A0A0A"
+cursor = "#E6E6E6"
+
+[scrolling]
+history = 10000
