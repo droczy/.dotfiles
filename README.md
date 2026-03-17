@@ -1,6 +1,6 @@
 # dotfiles
 
-Personal dotfiles managed with stow.
+Personal dotfiles under macos managed with stow.
 
 ## Install
 ```bash
