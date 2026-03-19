@@ -21,8 +21,9 @@ backup_root="$HOME/.dotfiles-backups"
 timestamp="$(date +%Y%m%d-%H%M%S)"
 backup_dir="$backup_root/$timestamp"
 backup_count=0
+stow_ignore='^install\.sh$'
 
-simulate_output="$(stow --simulate . 2>&1 || true)"
+simulate_output="$(stow --simulate --ignore="$stow_ignore" . 2>&1 || true)"
 
 while IFS= read -r line; do
   target_rel=""
@@ -76,6 +77,6 @@ else
 fi
 
 echo "Setting up dotfiles..."
-stow --restow .
+stow --restow --ignore="$stow_ignore" .
 
 echo "Done!"
