@@ -6,6 +6,7 @@
                 "rules": [
                     {
                         "description": "Tab → cmd+ctrl (hold), Tab (tap)",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "tab" },
@@ -22,6 +23,7 @@
                     },
                     {
                         "description": "Caps Lock als Hyper-Key für Sonderzeichen (DE Layout)",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "caps_lock" },

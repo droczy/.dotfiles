@@ -34,3 +34,5 @@ if [[ -n "$HOMEBREW_PREFIX" && -d "$HOMEBREW_PREFIX/opt/openjdk" ]]; then
   export JAVA_HOME="$HOMEBREW_PREFIX/opt/openjdk/libexec/openjdk.jdk/Contents/Home"
   export PATH="$JAVA_HOME/bin:$PATH"
 fi
+
+export PATH="$HOME/.local/bin:$PATH"

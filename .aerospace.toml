@@ -175,6 +175,11 @@ on-mode-changed = []
 
 # Floating windows
 [[on-window-detected]]
+if.app-name-regex-substring = 'java'
+if.window-title-regex-substring = 'PM2-Mediathek'
+run = 'layout floating'
+
+[[on-window-detected]]
 if.app-id = 'in.sinew.Enpass-Desktop.App'
 run = 'layout floating'
 
